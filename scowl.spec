@@ -5,8 +5,8 @@
 Name     : scowl
 Version  : 2018.04.16
 Release  : 1
-URL      : http://downloads.sourceforge.net/wordlist/scowl-2018.04.16.tar.gz
-Source0  : http://downloads.sourceforge.net/wordlist/scowl-2018.04.16.tar.gz
+URL      : https://sourceforge.net/projects/wordlist/files/SCOWL/2018.04.16/scowl-2018.04.16.tar.gz
+Source0  : https://sourceforge.net/projects/wordlist/files/SCOWL/2018.04.16/scowl-2018.04.16.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Public-Domain
