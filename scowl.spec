@@ -4,7 +4,7 @@
 #
 Name     : scowl
 Version  : 2019.10.06
-Release  : 2
+Release  : 3
 URL      : https://sourceforge.net/projects/wordlist/files/SCOWL/2019.10.06/scowl-2019.10.06.tar.gz
 Source0  : https://sourceforge.net/projects/wordlist/files/SCOWL/2019.10.06/scowl-2019.10.06.tar.gz
 Summary  : No detailed summary available
@@ -38,6 +38,7 @@ license components for the scowl package.
 
 %prep
 %setup -q -n scowl-2019.10.06
+cd %{_builddir}/scowl-2019.10.06
 %patch1 -p1
 
 %build
@@ -45,17 +46,17 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571068297
+export SOURCE_DATE_EPOCH=1604904184
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1571068297
+export SOURCE_DATE_EPOCH=1604904184
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/scowl
 cp %{_builddir}/scowl-2019.10.06/r/yawl/LICENSE %{buildroot}/usr/share/package-licenses/scowl/ce9e0928d4e7f35ab599f7f40c7d382eeeef4a18
